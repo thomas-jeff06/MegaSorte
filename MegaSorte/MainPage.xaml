@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MegaSorte.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="MainPage">
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="CenterAndExpand">
+            <Image
+                Margin="0,30,0,0"
+                HeightRequest="115"
+                Source="logo_green.png"
+                WidthRequest="74" />
+            <Label
+                x:Name="NameApp"
+                Margin="0,20,0,100"
+                HorizontalOptions="Center"
+                IsVisible="true"
+                Text="Numero da Sorte"
+                TextColor="#00AB37"
+                VerticalOptions="Center" />
+
+            <VerticalStackLayout x:Name="ContainerNumbers" IsVisible="false">
+                <Label
+                    Margin="0,20,0,0"
+                    HorizontalOptions="Center"
+                    Text="Seus números da sorte são:" />
+
+                <HorizontalStackLayout
+                    Margin="0,60"
+                    HorizontalOptions="Center"
+                    Spacing="5">
+                    <Border
+                        Padding="10,5"
+                        Stroke="{StaticResource Primary}"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="Number01"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                    <Border
+                        Padding="10,5"
+                        Stroke="{StaticResource Primary}"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="Number02"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                    <Border
+                        Padding="10,5"
+                        Stroke="{StaticResource Primary}"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="Number03"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                    <Border
+                        Padding="10,5"
+                        Stroke="{StaticResource Primary}"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="Number04"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                    <Border
+                        Padding="10,5"
+                        Stroke="{StaticResource Primary}"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="Number05"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                    <Border
+                        Padding="10,5"
+                        Stroke="{StaticResource Primary}"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="Number06"
+                            FontSize="24"
+                            Text=""
+                            TextColor="#00AB37" />
+                    </Border>
+                </HorizontalStackLayout>
+
+                <Label
+                    Margin="0,0,0,50"
+                    HorizontalOptions="Center"
+                    Text="Boa Sorte" />
+            </VerticalStackLayout>
+            <Button
+                Clicked="OnGenerateLuckNumber"
+                HorizontalOptions="Center"
+                Text="Gerar número da sorte" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
